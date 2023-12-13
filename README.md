@@ -41,7 +41,7 @@ npm install
 npm start
 ```
 
-The client uses (AppAuth for JS)[https://github.com/openid/AppAuth-JS] to handle the authorization flow complexity, and performs automatic discovery of the server OpenId configuration.
+The client uses [AppAuth for JS](https://github.com/openid/AppAuth-JS) to handle the authorization flow complexity, and performs automatic discovery of the server OpenId configuration.
 
 To keep this demo as simple as possible, the client consists of a single component called [`App`](/src/Client/src/App.js). This however has a few backdraws (which someone with better frontend skills than yours truly might be able to solve):
 - The client flickers between authentication states when it reloads after a successful auth flow.
