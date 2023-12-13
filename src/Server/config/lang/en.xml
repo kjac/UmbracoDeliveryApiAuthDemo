@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="en" intName="English (UK)" localName="English (UK)" lcid="" culture="en-GB">
+  <area alias="login">
+    <key alias="greeting0">Login: admin@localhost / SuperSecret123</key>
+    <key alias="greeting1">Login: admin@localhost / SuperSecret123</key>
+    <key alias="greeting2">Login: admin@localhost / SuperSecret123</key>
+    <key alias="greeting3">Login: admin@localhost / SuperSecret123</key>
+    <key alias="greeting4">Login: admin@localhost / SuperSecret123</key>
+    <key alias="greeting5">Login: admin@localhost / SuperSecret123</key>
+    <key alias="greeting6">Login: admin@localhost / SuperSecret123</key>
+  </area>
+</language>

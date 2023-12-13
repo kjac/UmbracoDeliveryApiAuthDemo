@@ -1,0 +1,14 @@
+body {
+	background-color: #d25e72;
+	font-family: sans-serif;
+	padding: 2rem;
+}
+label {
+	display: block;
+}
+input, button {
+	padding:  0.5rem;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	width: 20rem;
+}

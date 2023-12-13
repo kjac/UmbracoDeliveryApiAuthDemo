@@ -1,0 +1,48 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@using Umbraco.Cms.Web.Common.Models
+@using Umbraco.Cms.Web.Website.Controllers
+@{
+	Layout = null;
+    var loginModel = new LoginModel {
+        RedirectUrl = Context.Request.Query["ReturnUrl"]
+    };
+}
+<html lang="en">
+<head>
+	<title>Login demo</title>
+	<style>
+		body {
+			background-color: #a9c8ec;
+			font-family: sans-serif;
+			padding: 2rem;
+		}
+		label {
+			display: block;
+			margin-bottom: 0.5rem;
+		}
+		input, button {
+			padding:  0.5rem;
+			font-size: 1rem;
+			margin-bottom: 1.5rem;
+			width: 20rem;
+		}
+	</style>
+</head>
+<body>
+<h1>Welcome, friend 🥰</h1>
+@using (Html.BeginUmbracoForm<UmbLoginController>("HandleLogin", new { RedirectUrl = loginModel.RedirectUrl }))
+{
+	<div asp-validation-summary="ModelOnly"></div>
+	<div>
+		<label asp-for="@loginModel.Username">What's your user name?</label>
+		<input asp-for="@loginModel.Username" value="umbracian@member"/>
+	</div>
+	<div>
+		<label asp-for="@loginModel.Password">What's your password?</label>
+		<input asp-for="@loginModel.Password" value="ItIsSecret"/>
+	</div>
+
+	<button type="submit">Log in</button>
+}
+</body>
+</html>
