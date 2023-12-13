@@ -107,9 +107,9 @@ function App() {
     const fetchRootItems = () => {
         setContentItems(undefined);
 
-		// fetch all children of the to the content root("home") using bearer token auth with the obtained access token (if any)
+		// fetch all articles of the content root ("home") using bearer token auth with the obtained access token (if any)
         fetch(
-            `${serverUrl}/umbraco/delivery/api/v2/content/?fetch=children:/`,
+            `${serverUrl}/umbraco/delivery/api/v2/content/?fetch=children:/&filter=contentType:article`,
             {
                 method: 'GET',
                 headers: {
