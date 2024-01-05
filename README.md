@@ -12,6 +12,8 @@ The server is an Umbraco 13 site, which means you'll need .NET 8 to run it. To s
 dotnet run
 ```
 
+The Umbraco database is part of this repo, so the site should "just run" without any fuss.
+
 The administrator login for Umbraco is:
 
 - Username: admin@localhost
@@ -21,7 +23,7 @@ To facilitate member auth in the Delivery API, the `AuthorizationCodeFlow` is en
 
 The Umbraco content features:
 - A set of articles. Some of these are publicly available and some are protected.
-- A login page. For the sake of this demo, a valid set of member credentials are hardcoded here.
+- A login page. For the sake of this demo, a valid set of member credentials is hardcoded here.
 
 By means of composition, the Umbraco site has:
 - CORS enabled for the client.
