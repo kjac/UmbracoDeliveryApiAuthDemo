@@ -32,7 +32,10 @@ By means of composition, the Umbraco site has:
 
 All composers can be found in the [`src/Server/Configuration`](/src/Server/Configuration) folder.
 
-More details on the how's and why's of member auth in the Delivery API can be found in the [official documentation](https://docs.umbraco.com/umbraco-cms/reference/content-delivery-api/protected-content-in-the-delivery-api).
+> [!TIP]
+> For the sake this demo, the server implementation is kept as simple as possible. However, the Delivery API is capable of much more than "just" handling local member logins - for example, external login providers can also be used.
+>
+> More more details on the how's and why's of member auth in the Delivery API can be found in the [official documentation](https://docs.umbraco.com/umbraco-cms/reference/content-delivery-api/protected-content-in-the-delivery-api).
 
 ## The client
 
